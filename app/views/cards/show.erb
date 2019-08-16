@@ -1,0 +1,11 @@
+<h2>Your New Card!</h2>
+
+  <h3>Author: <%= @card.user.username %></h3>
+  <h3>Card: <%= @card.content %></h3>
+
+<form method="post" action="/cards/<%= @card.id %>/delete">
+  <input id="hidden" type="hidden" name="_method" value="delete">
+  <input type="submit" value="Delete Card!">
+</form><br>
+
+<a href="/cards/<%=@card.id%>/edit">Edit Card!</a>
