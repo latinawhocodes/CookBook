@@ -26,19 +26,21 @@ Objectives
 ├── app
 │   ├── controllers
 │   │   └── application_controller.rb
+│   │   └── users_controller.rb
+│   │   └── cards_controller.rb
 │   ├── models
-│   │   ├── tweet.rb
+│   │   ├── cards.rb
 │   │   └── user.rb
 │   └── views
 │       ├── index.erb
 │       ├── layout.erb
 │       ├── tweets
-│       │   ├── create_tweet.erb
-│       │   ├── edit_tweet.erb
-│       │   ├── show_tweet.erb
-│       │   └── tweets.erb
+│       │   ├── new.erb
+│       │   ├── edit.erb
+│       │   ├── show.erb
+│       │   └── cards.erb
 │       └── users
-│           ├── create_user.erb
+│           ├── signup.erb
 │           └── login.erb
 ├── config
 │   └── environment.rb
@@ -47,7 +49,7 @@ Objectives
 │   ├── development.sqlite
 │   ├── migrate
 │   │   ├── 20151124191332_create_users.rb
-│   │   └── 20151124191334_create_tweets.rb
+│   │   └── 20151124191334_create_cards.rb
 │   ├── schema.rb
 │   └── test.sqlite
 ```
