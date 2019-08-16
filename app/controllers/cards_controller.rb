@@ -60,7 +60,7 @@ class CardsController < ApplicationController
             @card.title = params[:title]
             @card.content = params[:content]
             @card.save 
-            redirect '/cards/#{@card.id}'
+            redirect '/cards'
         end 
     end 
 
