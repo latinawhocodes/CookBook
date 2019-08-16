@@ -67,7 +67,7 @@ class CardsController < ApplicationController
     delete '/cards/:id/delete' do 
         if logged_in?
             @card = Card.find_by_id(params[:id])
-            if self.current_user.id == @card.user_id
+            if current_user.id == @card.user_id
                 @card.delete
                 redirect '/cards'
             else 
